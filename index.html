@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="row" ng-app="invoice2" ng-controller="InvoiceController as invoice">
+    <div class="row" ng-app="invoice3" ng-controller="InvoiceController as invoice">
         <div class="large-4 columns">
             <h2>
                 <b>Invoice:</b>
@@ -23,7 +23,7 @@
             </div>
             <div>
                 <b>Total:</b>
-                <span style="margin-right: 15%" ng-repeat="c in invoice.currencies">
+                <span style="margin-right: 5%" ng-repeat="c in invoice.currencies">
                     <span>{{c + ': '}}</span><b>{{invoice.total(c) | number:2}}</b>
                 </span>
                 <br>
@@ -32,8 +32,8 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-    <script src="finance2.js"></script>
-    <script src="invoice2.js"></script>
+    <script src="finance3.js"></script>
+    <script src="invoice3.js"></script>
 </body>
 
 </html>
