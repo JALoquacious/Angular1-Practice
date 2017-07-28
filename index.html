@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="row" ng-app="invoice1" ng-controller="InvoiceController as invoice">
+    <div class="row" ng-app="invoice2" ng-controller="InvoiceController as invoice">
         <div class="large-4 columns">
             <h2>
                 <b>Invoice:</b>
@@ -16,8 +16,7 @@
                 Quantity: <input type="number" min="0" ng-model="invoice.qty" required>
             </div>
             <div>
-                Costs: <input type="number" min="0" ng-model="invoice.cost" required>
-                Currency:
+                Costs: <input type="number" min="0" ng-model="invoice.cost" required> Currency:
                 <select ng-model="invoice.inCurrency">
                     <option ng-repeat="c in invoice.currencies">{{c}}</option>
                 </select>
@@ -33,9 +32,8 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
-    <script src="invoice1.js"></script>
+    <script src="finance2.js"></script>
+    <script src="invoice2.js"></script>
 </body>
 
 </html>
