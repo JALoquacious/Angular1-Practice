@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular Service Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+</head>
+
+<body ng-app="alertService">
+    <div id="alert" ng-controller="TestController">
+        <p>Let's try this simple notify service, injected into the controller...</p>
+        <input ng-init="message='test'" ng-model="message">
+        <button class="button success" ng-click="callNotify(message);">NOTIFY</button>
+        <p>(Click 3 times to see an alert)</p>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+    
+</html>
